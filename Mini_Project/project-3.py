@@ -15,4 +15,5 @@ print(df.shape)
 # print("duplicated: ",df.duplicated())
 df.columns=df.columns.str.lower().str.replace(" ","_")
 print(df.head())
-print(df.to_string())
+
+
