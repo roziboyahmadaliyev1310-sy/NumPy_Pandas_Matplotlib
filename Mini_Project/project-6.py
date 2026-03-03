@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 import re
-
+import matplotlib.pyplot as plt
 
 df=pd.read_csv("/Users/akhmadalievruziboy/Desktop/GitHub/NumPy/Mini_Project/messy_customer_data.csv")
 
@@ -59,5 +59,3 @@ df=df.drop_duplicates()
 
 # df.to_csv('/Users/akhmadalievruziboy/Desktop/GitHub/NumPy/Mini_Project/cleaned_customer_data.csv', index=False)
 
-
-print(df.to_string())
