@@ -14,6 +14,7 @@ df.columns=df.columns.str.lower().str.replace(" ","_")
 df=df.drop_duplicates()
 
 df['sale_date']=pd.to_datetime(df['sale_date'])
+
 avg_figure=df.groupby('year')['customer_rating'].mean()
 
 plt.figure(figsize=(10,5))
