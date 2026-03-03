@@ -57,7 +57,7 @@ df['last_name']=df['last_name'].str.strip()
 # print('before',df.duplicated().sum())
 df=df.drop_duplicates()
 
-df.to_csv('/Users/akhmadalievruziboy/Desktop/GitHub/NumPy/Mini_Project/cleaned_customer_data.csv', index=False)
+# df.to_csv('/Users/akhmadalievruziboy/Desktop/GitHub/NumPy/Mini_Project/cleaned_customer_data.csv', index=False)
 
 
-print(df)
+print(df.to_string())
